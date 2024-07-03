@@ -1,0 +1,25 @@
+/* ---------------------------------- */
+/* すべての要素にフォント設定を行う */
+/* ---------------------------------- */
+
+* {
+    font-family: "Mochiy Pop One", sans-serif !important;
+}
+
+/* ---------------------------------- */
+/* 画像の上に文字を表示するための設定 */
+/* ---------------------------------- */
+.camera-card {
+    position: relative;
+}
+
+.top-text {
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    padding: 2px 5px;
+    font-size: 11px;
+    background-color: #fff;
+    border-radius: 5px;
+    opacity: 0.5;
+}

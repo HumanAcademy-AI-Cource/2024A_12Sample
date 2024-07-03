@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+  <html>
+
+    <head>
+      <title>監視カメラ2</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <!-- ウェブフォントを使う設定 -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap">
+      <!-- OnsenUIのCSSを読み込む -->
+      <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+      <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+      <link rel="stylesheet" href="./static/style.css" />
+    </head>
+
+    <body>
+      <ons-page>
+        <ons-toolbar>
+          <div class="center">監視カメラ2</div>
+        </ons-toolbar>
+
+        <ons-card>
+          <div class="camera-card">
+            <img id="camera-box" width="100%" src="">
+            <p class="top-text">リアルタイム映像</p>
+          </div>
+
+        </ons-card>
+
+        <ons-card>
+          <div class="camera-card">
+            <img id="photo-box" width="100%" src="./static/no_image.png">
+            <p id="photo-info" class="top-text"></p>
+          </div>
+
+        </ons-card>
+      </ons-page>
+
+      <!-- OnsenUIのライブラリを読み込む -->
+      <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+      <!-- WebSocketのライブラリを読み込む -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.4/socket.io.min.js"></script>
+      <script src="./static/main.js"></script>
+    </body>
+
+  </html>
